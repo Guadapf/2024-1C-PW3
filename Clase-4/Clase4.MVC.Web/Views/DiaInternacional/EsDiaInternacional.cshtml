@@ -1,0 +1,8 @@
+﻿@using System.Globalization
+@model EsDiaInternacionalModel
+@{
+}
+<h2>@(Model.EsDiaInternacional ? "Es un dia internacional" : "No es un dia internacional")</h2>
+<p>@Model.Dia de @(new DateTime(2024, Model.Mes, Model.Dia).ToString("MMMM",CultureInfo.CreateSpecificCulture("es-ar")))</p>
+<p>@Model.Nombre</p>
+<p>@Model.Descripcion</p>
